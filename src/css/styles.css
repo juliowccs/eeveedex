@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+body {
+    background-color: #fff;;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+li {
+    list-style-type: none;
+}
+.pokeball {
+    width: 3rem;
+    margin: 1rem;
+    margin-left: 3rem;
+}
+.button-theme {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 1rem;
+    margin-right: 3rem;
+}
+.button-image {
+    width: 3rem;
+}
+.poke-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.poke-card {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: #212121;
+    width: 20rem;
+    transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.poke-card:hover {
+    scale: 1.05;
+}
+.gif {
+    margin: 1rem;
+    height: 4rem;
+}
+.info {
+    font-family: 'Poppins', sans-serif;
+}
+.types {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.type {
+    background-color: #7fffd4;
+    border-radius: 2rem;
+    width: 5rem;
+    text-align: center;
+}
+.normal {
+    background-color: #a4acaf;
+    color: #212121;
+}
+.water {
+    background-color: #4592c4;
+    color: #fff;
+}
+.fire {
+    background-color: #fd7d24;
+    color: #fff;
+}
+.grass {
+    background-color: #9bcc50;
+    color: #212121;
+}
+.poison {
+    background-color: #b97fc9;
+    color:#fff;
+}
+.electric {
+    background-color: #eed535;
+    color: #212121;
+}
+.psychic {
+    background-color: #f366b9;
+    color:#fff;
+}
+.dark {
+    background-color: #707070;
+    color:#fff;
+}
+.ice {
+    background-color: #51c4e7;
+    color: #212121;
+}
+.fairy {
+    background-color: #fdb9e9;
+    color: #212121;
+}
+.desc {
+    font-family: 'Poppins', sans-serif;
+}
