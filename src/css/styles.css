@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
 body {
-    background-color: #fff;;
+    background-color: var(--bg-ice-white);
     display: flex;
     flex-direction: column;
     color: #fff;
+    --bg-ice-white: #f8f1e9;
+    --bg-brown: #8d7966;
+    --bg-grey: #a8a39d;
+    --bg-light-grey: #e2ddd9;
 }
 header {
     display: flex;
@@ -13,10 +22,32 @@ header {
 li {
     list-style-type: none;
 }
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--bg-grey);
+    border-radius: 10rem;
+}
+.dark {
+    --bg-ice-white: #292522;
+    --bg-brown: #4d6160;
+    --bg-grey: #a39081;
+    --bg-light-grey: #efd9b4;
+}
 .pokeball {
     width: 3rem;
     margin: 1rem;
-    margin-left: 3rem;
+    margin-left: 1rem;
+    -webkit-transition: -webkit-transform .4s
+    ease-in-out;
+    -ms-transition: -ms-transform .4s ease-in-out;
+    transition: transform .4s ease-in-out;  
+}
+.pokeball:hover {
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
 }
 .button-theme {
     background-color: transparent;
@@ -27,20 +58,25 @@ li {
     margin-right: 3rem;
 }
 .button-image {
-    width: 3rem;
+    width: 2rem;
+    background-color: var(--bg-light-grey);
+    padding: 10px;
+    border-radius: 1rem;
 }
 .poke-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    width: 95%;
+    margin-right: 2.5%;
 }
 .poke-card {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    padding: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1.5rem;
     border-radius: 2rem;
-    background-color: #212121;
-    width: 20rem;
+    background-color: var(--bg-brown);
+    width: 40rem;
     transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .poke-card:hover {
@@ -51,19 +87,28 @@ li {
     height: 4rem;
 }
 .info {
+    background-color: var(--bg-grey);
+    padding: 0.6rem;
+    border-radius: 2rem;
+    font-size: 100%;
     font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: center;
 }
 .types {
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-left: -2rem;
 }
 .type {
     background-color: #7fffd4;
     border-radius: 2rem;
     width: 5rem;
     text-align: center;
+    flex-direction: row;
+    justify-content: center ;
 }
 .normal {
     background-color: #a4acaf;

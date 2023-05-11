@@ -5,20 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/styles.css">
-    <title>Pokedex</title>
+    <script src="src/javascript/script.js"></script>
+    <title>Eeveedex</title>
 </head>
 <body>
     <header>
-        <a href="#">
+        <a href="#eevee">
             <img src="src/imgs/pokeball.png" alt="pokeball" class="pokeball">
         </a>
-        <button id="button-theme" class="button-theme">
-            <img src="src/imgs/sun.png" alt="sun image" class="button-image">
+        <button id="button-theme" onclick="darktheme()" class="button-theme">
+            <img src="src/imgs/sun.png" alt="sun image" class="button-image" id="button-image">
         </button>
     </header>
     <main>
         <ul class="poke-list">
-            <li class="poke-card">
+            <li class="poke-card" id="eevee">
                 <div class="info">
                     <span>Eevee</span>
                     <span>#133</span>
