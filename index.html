@@ -5,15 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/styles.css">
-    <script src="src/javascript/script.js"></script>
     <title>Eeveedex</title>
 </head>
 <body>
     <header>
-        <a href="#eevee">
-            <img src="src/imgs/pokeball.png" alt="pokeball" class="pokeball">
-        </a>
-        <button id="button-theme" onclick="darktheme()" class="button-theme">
+        <span class="pokebg">
+            <a href="#eevee">
+                <button id="refresh" class="button-theme">
+                    <img src="src/imgs/pokeball.png" alt="pokeball" class="pokeball">
+                </button>
+            </a>
+        </span>
+        <button id="button-theme" class="button-theme">
             <img src="src/imgs/sun.png" alt="sun image" class="button-image" id="button-image">
         </button>
     </header>
@@ -97,8 +100,6 @@
 
                 <p class="desc">A ponta de sua cauda bifurcada treme quando está prevendo o próximo movimento de seu oponente.</p>
             </li>
-        </ul> 
-        <ul class="poke-list">
 
             <li class="poke-card">
                 <div class="info">
@@ -165,5 +166,7 @@
             </li>
         </ul>
     </main>
+    
+    <script src="./src/javascript/index.js"></script>
 </body>
 </html>
